@@ -1,6 +1,3 @@
-##Source of the original data: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip . 
-
-##Original description: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 ##The attached R script (run_analysis.R) performs the following to clean up the data:
 
@@ -104,3 +101,8 @@ fbodybodygyrojerkmag-std
 
 ###5. Creates a 2nd, independent tidy data set with the average of each measurement (66) for each activity (6) and each subject (30).
 The result is saved as data_average.txt, a 180x68 data frame, where the first column contains subject IDs, the second column contains activity names, and then the averages for each of the 66 attributes are in columns from 3 to 68. There are 30 subjects and 6 activities, thus 180 rows in this data set with averages.
+
+##Notes
+Source of the original data: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip . 
+
+Original description: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones

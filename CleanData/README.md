@@ -11,14 +11,14 @@ Create one R script called run_analysis.R that does the following.
 - Appropriately labels the data set with descriptive activity names.
 - Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-Files
+### Files
 
 This folder includes:
 - run_analysis.R: script to perform the analysis
 - codeBook.md:    in depth description of the steps and outputs of the script
 - README.md:      overview of folder content
 
-Data
+### Data
 
 The data used in the project are freely downloadable from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 

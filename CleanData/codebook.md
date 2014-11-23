@@ -10,11 +10,13 @@
 - train/y_train.txt with test/y_test.txt becomes a 10299 x 1 data frame y with activity IDs.
 
 ####2. Reads file features.txt and extracts only the measurements of mean and standard deviation 
-The script includes the parentheses in the conditions for mean and standard deviation, to exlude meanFreq entries and avoid ambiguity (subjective choice, see below). 
+The script includes the parentheses in the conditions for mean and standard deviation, to exlude meanFreq entries and avoid ambiguity (subjective choice, see below). The result is a 10299 x 66 data frame, because only 66 out of 561 attributes are measurements on the mean and standard deviation. All measurements are floating point numbers in the range (-1, 1).
+
 As stated in David's Project FAQ: 
-what columns are measurements on the mean and standard deviation
-Based on column names in the features is an open question as to is the the entries that include mean() and std() at the end, or does it include entries with mean in an earlier part of the name as well. There are no specific marking critieria on the number of columns. It is up to you to make a decision and explain what you did to the data. Make it easy for people to give you marks by explaining your reasoning).
-The result is a 10299 x 66 data frame, because only 66 out of 561 attributes are measurements on the mean and standard deviation. All measurements are floating point numbers in the range (-1, 1).
+
+**_what columns are measurements on the mean and standard deviation_**
+
+_Based on column names in the features is an open question as to is the the entries that include mean() and std() at the end, or does it include entries with mean in an earlier part of the name as well. There are no specific marking critieria on the number of columns. It is up to you to make a decision and explain what you did to the data. Make it easy for people to give you marks by explaining your reasoning)._
 
 ####3. Reads activity_labels.txt and applies descriptive activity names to name the activities in the data set:
 walking

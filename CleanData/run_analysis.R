@@ -56,7 +56,7 @@ names(y)        <- "activity"
 # Combination of subjects information, data and features, and table saving.
 names(Subjs) <- "subject"
 clean_table  <- cbind(Subjs, y, X)
-write.table(clean_table, "merged_clean_data.txt")
+write.table(clean_table, "merged_clean_data.txt", row.name=FALSE )
 
 ###############################################################################
 #     5. Creates a 2nd, independent tidy data set with the average of each    #
@@ -94,4 +94,4 @@ for (iSubjs in 1:numSubjs) {
 }
 
 # Table saving
-write.table(average_table, "data_set_with_the_averages.txt")
+write.table(average_table, "data_set_with_the_averages.txt", row.name=FALSE)

@@ -69,17 +69,29 @@ numActs       <- length(activities[,1])
 numCols       <- dim(clean_table)[2]
 average_table <- clean_table[1:(numSubjs*numActs), ]
 
+# Set counter 
 row = 1
+
+# Loop over subjects (1:30) and activities (1:60)
 for (iSubjs in 1:numSubjs) {
   for (iActs in 1:numActs) {
+    
+    # The first two columns will represent the subject number and the 
+    # activity type respectively
     average_table[row, 1] <- uniqueSubjs[iSubjs]
     average_table[row, 2] <- activities[iActs, 2]
     
-    tmp <- clean_table[clean_table$subject==iSubjs & 
-           clean_table$activity==activities[iActs, 2], ]
+    # Find in clean_table the entries corresponding to iSubjs and iActs
+    tmp <- clean_table[clean_table$subject  == iSubjs & 
+                       clean_table$activity == activities[iActs, 2], ]
+    
+    # Calculate the mean and and save it in a new table
     average_table[row, 3:numCols] <- colMeans(tmp[, 3:numCols])
     
+    # Update counter
     row = row + 1
   }
 }
+
+# Table saving
 write.table(average_table, "data_set_with_the_averages.txt")

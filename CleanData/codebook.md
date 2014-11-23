@@ -1,5 +1,5 @@
 
-###The attached R script (run_analysis.R) performs the following to clean up the data:
+###The script run_analysis.R performs the following to clean up the data:
 
 ####1. Merges the training and test sets, and saves it as merged_clean_data.txt.
 

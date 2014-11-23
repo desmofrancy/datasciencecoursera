@@ -94,4 +94,4 @@ for (iSubjs in 1:numSubjs) {
 }
 
 # Table saving
-write.table(average_table, "data_set_with_the_averages.txt", row.name=FALSE)
+write.table(average_table, "average_data.txt", row.name=FALSE)
